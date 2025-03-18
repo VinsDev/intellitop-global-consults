@@ -10,7 +10,7 @@ function Header() {
         <div>
           <img src={logo} alt="logo here " className="h-24 w-30" />
         </div>
-        <div className="flex items-center">
+        <div className="hidden md:flex items-center">
           <Button
             type="primary"
             className="h-10 font-medium text-lg mr-2 md:mr-4 lg:mr-6 customButton rounded-xl"
