@@ -44,14 +44,14 @@ function Videosection() {
           className="text-sm md:text-base lg:text-xl text-[#333333] mb-4 md:mb-8"
           data-aos="fade-up"
         >
-          Welcome to <strong>Intelitop Global Concepts</strong>, where we empower students and businesses with world-class education and cutting-edge technology solutions.
+          Welcome to <strong>Intelitop Global Consults</strong>, where we empower students and businesses with world-class education and cutting-edge technology solutions.
         </p>
         <div className="flex justify-center items-center gap-x-4">
           <div>
-          <Button
+            <Button
               data-aos="fade-up"
               type="primary"
-              onClick={showForm} 
+              onClick={showForm}
               className="bg-[#4A4AF3] h-10 md:h-12 lg:h-14 px-4 md:px-6 lg:px-8 text-sm md:text-base lg:text-lg font-semibold rounded-xl text-white hover:bg-[#3b3bd6]"
             >
               Get Started Today
@@ -82,7 +82,7 @@ function Videosection() {
           className="text-[#1a1a1a] text-3xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4"
           data-aos="fade-up"
         >
-          About Intelitop Global Concepts
+          About Intelitop Global Consults
         </h1>
         <p
           className="text-sm md:text-base lg:text-xl text-[#333333] mb-4 md:mb-8"
@@ -136,7 +136,7 @@ function Videosection() {
                 Standardized Exams
               </h1>
               <p className="text-[#333333]">
-                Master SAT, GRE, GMAT, and CET with structured guidance and modern tools.
+                Master SAT, GRE, GMAT, CET, WAEC, NECO, GCE, and JAMB with structured guidance and modern tools.
               </p>
             </div>
           </div>
@@ -313,7 +313,7 @@ function Videosection() {
           What Our Clients Say
         </h1>
         <p className="text-xl text-[#333333] mb-8" data-aos="fade-up">
-          Hear from students and businesses who’ve achieved success with Intelitop Global Concepts.
+          Hear from students and businesses who’ve achieved success with Intelitop Global Consults.
         </p>
       </div>
       <div className="p-8">

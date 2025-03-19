@@ -15,9 +15,11 @@ function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           {/* Brand Section */}
           <div className="space-y-6 xl:col-span-1">
-            <img className="h-10" src={logo} alt="Intelitop Global Concepts Logo" />
+            <img className="h-10" src={logo} alt="Intelitop Global Consults Logo" />
             <p className="text-[#555555] text-base">
-              Empowering students and businesses with world-class education and innovative technology solutions since 2025. 
+              Empowering students and businesses with world-class education and innovative technology solutions since 2025.<br /><br />Office address:<br />
+              4th Floor, Building II, River House.
+              Plot 83 Ralph shodeinde Street. Central Business District. Abuja.
             </p>
             <div className="flex space-x-6">
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
@@ -122,7 +124,7 @@ function Footer() {
         {/* Bottom Section */}
         <div className="flex flex-col-reverse justify-between items-center mt-12 sm:flex-row sm:justify-between border-t border-gray-200 pt-8">
           <div className="text-base text-[#555555] mb-4 sm:mb-0">
-            © {new Date().getFullYear()} Intelitop Global Concepts. All rights reserved.
+            © {new Date().getFullYear()} Intelitop Global Consults. All rights reserved.
           </div>
           <div className="flex gap-4 justify-center items-center">
             <span className="text-[#555555] text-base">
