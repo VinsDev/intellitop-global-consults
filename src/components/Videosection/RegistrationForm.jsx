@@ -13,7 +13,7 @@ function RegistrationForm({ visible, onClose }) {
     setLoading(true);
     try {
       // Make API call to your Vercel serverless function
-      const response = await fetch('https://your-vercel-app.vercel.app/api/submit-form', {
+      const response = await fetch('https://intellitop-form-handler-serverless.vercel.app/api/submit-form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
