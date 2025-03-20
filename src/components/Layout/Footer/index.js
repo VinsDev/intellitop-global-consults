@@ -17,11 +17,11 @@ function Footer() {
           <div className="space-y-6 xl:col-span-1">
             <img className="h-10" src={logo} alt="Intelitop Global Consults Logo" />
             <p className="text-[#555555] text-base">
-              Empowering students and businesses with world-class education and innovative technology solutions since 2025.<br /><br />Office address:<br />
+              Empowering students and businesses with world-class education and innovative technology solutions since 2025.<br /><br /><b>Office address:</b><br />
               4th Floor, Building II, River House.
               Plot 83 Ralph shodeinde Street. Central Business District. Abuja.
             </p>
-            <div className="flex space-x-6">
+           {/*  <div className="flex space-x-6">
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                 <div className="flex items-center justify-center bg-[#e0e0e0] hover:bg-[#4A4AF3] rounded-full h-10 w-10 transition-colors duration-300">
                   <LinkedinOutlined className="text-[#4A4AF3] hover:text-white text-xl" />
@@ -42,7 +42,7 @@ function Footer() {
                   <TwitterOutlined className="text-[#4A4AF3] hover:text-white text-xl" />
                 </div>
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Links Section */}
@@ -54,17 +54,17 @@ function Footer() {
               </h4>
               <ul className="mt-4 space-y-4">
                 <li>
-                  <Link to="/education" className="text-base text-[#333333] hover:text-[#4A4AF3]">
+                  <Link to="#" className="text-base text-[#333333] hover:text-[#4A4AF3]">
                     Educational Training
                   </Link>
                 </li>
                 <li>
-                  <Link to="/software" className="text-base text-[#333333] hover:text-[#4A4AF3]">
+                  <Link to="#" className="text-base text-[#333333] hover:text-[#4A4AF3]">
                     Software Development
                   </Link>
                 </li>
                 <li>
-                  <Link to="/consulting" className="text-base text-[#333333] hover:text-[#4A4AF3]">
+                  <Link to="#" className="text-base text-[#333333] hover:text-[#4A4AF3]">
                     Consulting
                   </Link>
                 </li>
@@ -78,17 +78,17 @@ function Footer() {
               </h4>
               <ul className="mt-4 space-y-4">
                 <li>
-                  <Link to="/blog" className="text-base text-[#333333] hover:text-[#4A4AF3]">
+                  <Link to="#" className="text-base text-[#333333] hover:text-[#4A4AF3]">
                     Blog
                   </Link>
                 </li>
                 <li>
-                  <Link to="/guides" className="text-base text-[#333333] hover:text-[#4A4AF3]">
+                  <Link to="#" className="text-base text-[#333333] hover:text-[#4A4AF3]">
                     Exam Prep Guides
                   </Link>
                 </li>
                 <li>
-                  <Link to="/case-studies" className="text-base text-[#333333] hover:text-[#4A4AF3]">
+                  <Link to="#" className="text-base text-[#333333] hover:text-[#4A4AF3]">
                     Case Studies
                   </Link>
                 </li>
@@ -102,17 +102,17 @@ function Footer() {
               </h4>
               <ul className="mt-4 space-y-4">
                 <li>
-                  <Link to="/about" className="text-base text-[#333333] hover:text-[#4A4AF3]">
+                  <Link to="#" className="text-base text-[#333333] hover:text-[#4A4AF3]">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link to="/team" className="text-base text-[#333333] hover:text-[#4A4AF3]">
+                  <Link to="#" className="text-base text-[#333333] hover:text-[#4A4AF3]">
                     Our Team
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact" className="text-base text-[#333333] hover:text-[#4A4AF3]">
+                  <Link to="#" className="text-base text-[#333333] hover:text-[#4A4AF3]">
                     Contact Us
                   </Link>
                 </li>
@@ -127,15 +127,15 @@ function Footer() {
             © {new Date().getFullYear()} Intelitop Global Consults. All rights reserved.
           </div>
           <div className="flex gap-4 justify-center items-center">
-            <span className="text-[#555555] text-base">
+            <span className="text-[#555555] text-base font-bold">
               <a href="mailto:info@intelitopglobal.com" className="hover:text-[#4A4AF3]">
-                info@intelitopglobal.com
+                intellitopglobalconsult@gmail.com
               </a>
             </span>
-            <span className="text-[#555555] text-base">
-              <a href="tel:+234123456789" className="hover:text-[#4A4AF3]">
-                +234 123 456 789
-              </a>
+            <span className="text-[#555555] text-lg">
+              <b><a href="tel:+234123456789" className="hover:text-[#4A4AF3]">
+                +234-8162354487
+              </a></b>
             </span>
           </div>
         </div>

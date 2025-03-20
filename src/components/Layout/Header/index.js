@@ -19,7 +19,7 @@ function Header() {
           </Button>
           <Button
             type="primary"
-            className="bg-[#4A4AF3] rounded-xl h-10 font-medium text-lg HoverEffect"
+            className="bg-[#4A4AF3] rounded-xl h-10 font-medium text-lg HoverEffect" href="#contact"
           >
             Contact Us
           </Button>

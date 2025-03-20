@@ -9,16 +9,33 @@ function RegistrationForm({ visible, onClose }) {
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
 
-  const onFinish = (values) => {
+  const onFinish = async (values) => {
     setLoading(true);
-    // Simulate form submission (replace with actual API call)
-    setTimeout(() => {
-      console.log("Form Values:", values);
-      message.success("Registration successful! We’ll get in touch soon.");
+    try {
+      // Make API call to your Vercel serverless function
+      const response = await fetch('https://your-vercel-app.vercel.app/api/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values), // Send all form values
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        message.success("Registration successful! We’ll get in touch soon.");
+        form.resetFields();
+        onClose();
+      } else {
+        throw new Error(result.message || 'Submission failed');
+      }
+    } catch (error) {
+      console.error("Submission Error:", error);
+      message.error("Failed to submit registration. Please try again.");
+    } finally {
       setLoading(false);
-      form.resetFields();
-      onClose();
-    }, 1000);
+    }
   };
 
   const onFinishFailed = (errorInfo) => {

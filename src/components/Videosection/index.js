@@ -10,8 +10,13 @@ import {
   SafetyOutlined,
   ProductOutlined,
 } from "@ant-design/icons";
-import features from "../../assets/images/features.webp";
-import office from "../../assets/images/office.avif";
+
+import img1 from "../../assets/images/1.jpeg"
+import img2 from "../../assets/images/2.jpeg"
+import img3 from "../../assets/images/3.jpeg"
+import img4 from "../../assets/images/4.jpeg"
+import img5 from "../../assets/images/5.jpeg"
+import img7 from "../../assets/images/7.jpg"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import RegistrationForm from "./RegistrationForm";
@@ -58,26 +63,27 @@ function Videosection() {
             </Button>
           </div>
           <div>
-            <Button
-              data-aos="fade-up"
-              type="primary"
-              className="bg-[#e0e0e0] rounded-xl h-10 md:h-12 lg:h-14 w-24 md:w-32 lg:w-36 font-semibold text-[#333333] hover:bg-[#d1d1d1]"
-            >
-              Learn More
-            </Button>
+            <a href="#service">
+              <Button
+                data-aos="fade-up"
+                type="primary"
+                className="bg-[#e0e0e0] rounded-xl h-10 md:h-12 lg:h-14 w-24 md:w-32 lg:w-36 font-semibold text-[#333333] hover:bg-[#d1d1d1]"
+              >
+                Learn More
+              </Button></a>
           </div>
         </div>
       </div>
       <div className="flex justify-center my-12">
         <img
-          src={office}
+          src={img1}
           alt="Intelitop Office"
           className="w-full md:max-w-3xl"
         />
       </div>
 
       {/* About Us Section */}
-      <div className="max-w-3xl text-center pb-8 md:pb-12 lg:pb-16 mx-auto my-12">
+      <div className="max-w-3xl text-center pb-8 md:pb-12 lg:pb-16 mx-auto my-12" id="service">
         <h1
           className="text-[#1a1a1a] text-3xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4"
           data-aos="fade-up"
@@ -251,14 +257,14 @@ function Videosection() {
             </ul>
           </div>
           <div>
-            <img src={features} alt="Education Features" />
+            <img src={img4} alt="Education Features" />
           </div>
         </div>
       </div>
       <div className="p-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div>
-            <img src={features} alt="Software Features" />
+            <img src={img7} alt="Software Features" />
           </div>
           <div className="md:pr-4 lg:pr-12 xl:pr-16">
             <div className="font-architects-daughter text-xl text-[#4A4AF3] mb-2">
@@ -434,7 +440,7 @@ function Videosection() {
       </div>
 
       {/* Contact Section */}
-      <div className="p-4 md:p-8">
+      <div className="p-4 md:p-8" id="contact">
         <div className="bg-[#4A4AF3] text-white h-auto md:h-48 p-6 flex flex-col md:flex-row justify-between items-center px-4 md:px-16">
           <div className="space-y-2 md:w-1/2">
             <h1 className="text-lg md:text-3xl font-bold">Let’s Help You Succeed!</h1>
@@ -443,14 +449,21 @@ function Videosection() {
             </p>
           </div>
           <div className="flex flex-col md:flex-row gap-2 mt-4 md:mt-0 md:w-1/2">
-            <input
-              type="text"
-              placeholder="Your email..."
-              className="p-2 w-full md:w-64 text-[#333333]"
-            />
-            <button className="bg-white text-[#4A4AF3] px-6 py-2 font-semibold w-full md:w-auto hover:bg-[#e0e0e0]">
+            <div className="flex gap-4 justify-center items-center">
+              <span className="text-xl font-bold">
+                <a href="mailto:info@intelitopglobal.com" className="hover:text-[#4A4AF3]">
+                  intellitopglobalconsult@gmail.com
+                </a>
+              </span>
+              <span className="text-xl font-bold">
+                <a href="tel:+234123456789" className="hover:text-[#4A4AF3]">
+                  +234-8162354487
+                </a>
+              </span>
+            </div>
+            {/*  <button className="bg-white text-[#4A4AF3] px-6 py-2 font-semibold w-full md:w-auto hover:bg-[#e0e0e0]">
               Get in Touch
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
